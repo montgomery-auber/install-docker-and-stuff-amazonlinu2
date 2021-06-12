@@ -7,6 +7,7 @@ sudo systemctl enable docker --now
 sudo chkconfig docker on
 sudo yum install -y git screen curl wget telnet nc iputils-ping
 sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod 755  /usr/local/bin/docker-compose
 sudo reboot
 
 # https://gist.github.com/npearce/6f3c7826c7499587f00957fee62f8ee9
